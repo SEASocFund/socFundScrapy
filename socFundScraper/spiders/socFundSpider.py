@@ -13,12 +13,7 @@ class socFundSpider(scrapy.Spider):
     
     # 指定检索关键词
     keywords = keywords
-    # 角标
-    # index = 0
-    # page = 1
 
-    # 随机用户代理
-    headers= {'User-Agent': UserAgent().random}
     # POST提交参数
     formdata = formdata
 
@@ -28,6 +23,11 @@ class socFundSpider(scrapy.Spider):
     state_file = 'job_info.json'
     current_state = None
 
+    def headers(self):
+        """
+        随机获取身份
+        """
+        return {'User-Agent': UserAgent().random}
     def save_job_state(self):
         with open(self.state_file, 'w', encoding='utf-8') as f:
             json.dump(self.current_state, f, ensure_ascii=False, indent=4)
@@ -47,7 +47,7 @@ class socFundSpider(scrapy.Spider):
         self.formdata['xmname'] = self.keywords[self.current_state['index']]
         request_url = self.get_request_url(self.current_state['page'])
         print("关键词：{}即将爬取第{}页数据".format(formdata['xmname'], self.current_state['page']))
-        yield scrapy.Request(url=request_url, headers=self.headers, callback=self.parse, meta={'formdata': self.formdata})
+        yield scrapy.Request(url=request_url, headers=self.headers(), callback=self.parse, meta={'formdata': self.formdata})
 
     def get_request_url(self, page):
         """Generate the request URL by appending the page number if it’s greater than 1."""
@@ -62,7 +62,7 @@ class socFundSpider(scrapy.Spider):
         :return:
         """
         if response.meta['formdata']:
-            formdata = response.meta['formdata']
+            self.formdata = response.meta['formdata']
 
         # 每行数据所在节点
         try:
@@ -107,18 +107,20 @@ class socFundSpider(scrapy.Spider):
         if next_page:
             self.current_state['page'] += 1
             self.save_job_state()
-            print("关键词：{}即将爬取第{}页数据".format(formdata['xmname'], self.current_state['page']))
-            # n_url = self.url + '?' + 'xmname={}&p={}'.format(formdata['xmname'], self.page)
-            # yield scrapy.Request(url=n_url, callback=self.parse, meta={'formdata': formdata})
             next_url = self.get_request_url(self.current_state['page'])
-            yield scrapy.Request(url=next_url, callback=self.parse, meta={'formdata': response.meta['formdata']})
+            print("关键词：{}即将爬取第{}页数据".format(formdata['xmname'], self.current_state['page']))
+            yield scrapy.Request(url=next_url, headers=self.headers(), callback=self.parse, meta={'formdata': response.meta['formdata']})
         else:
             print("关键词：{}的数据爬取完毕，共{}页数据".format(formdata['xmname'], self.current_state['page']))
             self.current_state['index'] += 1
             self.current_state['page'] = 1
             try:
-                keyword = self.keywords[self.index]
+                if response.meta['formdata']:
+                    self.formdata = response.meta['formdata']
+                self.formdata['xmname'] = self.keywords[self.current_state['index']]
+                next_url = self.get_request_url(self.current_state['page'])
                 self.save_job_state()
-                yield self.start_requests()
+                print("关键词：{}即将爬取第{}页数据".format(formdata['xmname'], self.current_state['page']))
+                yield scrapy.Request(url=next_url, headers=self.headers(), callback=self.parse, meta={'formdata': response.meta['formdata']})
             except:
                 print("已爬取所有关键词数据")
