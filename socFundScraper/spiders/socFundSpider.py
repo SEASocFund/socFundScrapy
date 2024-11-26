@@ -3,6 +3,7 @@ import scrapy
 from socFundScraper.items import socFundItem
 from urllib.parse import urlencode
 from main import keywords
+from fake_useragent import UserAgent
 
 class socFundSpider(scrapy.Spider):
 
@@ -15,9 +16,9 @@ class socFundSpider(scrapy.Spider):
     keywords = keywords
     # 角标
     index = 0
-    # 年份
-    # years = 2023
-    headers= {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'}
+
+    # 随机用户代理
+    headers= {'User-Agent': UserAgent().random}
     # POST提交参数
     formdata = {
         'pznum': '',
