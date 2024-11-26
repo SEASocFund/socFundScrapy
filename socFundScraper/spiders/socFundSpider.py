@@ -4,6 +4,7 @@ from socFundScraper.items import socFundItem
 from urllib.parse import urlencode
 from main import keywords
 from fake_useragent import UserAgent
+import random
 
 class socFundSpider(scrapy.Spider):
 
