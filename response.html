@@ -1,0 +1,813 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta content="all" name="robots" />
+<meta name="description" content="{TAG_59447_TAG}" />
+<meta name="keywords" content="{TAG_59446_TAG}" />
+<meta name="filetype" content="1" />
+<meta name="publishedtype" content="1" />
+<meta name="pagetype" content="2" />
+<meta name="catalogs" content="{TAG_83943_TAG}" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>国家社科基金项目数据库</title>
+<!-- 调用样式表 -->
+<link rel="stylesheet"  href="//fz.people.com.cn/skygb/sk/Public/page.css" type="text/css" media="all"  />
+<script src="//fz.people.com.cn/skygb/sk/Public/jquery-1.4.2.min.js" type="text/javascript" language="javascript"></script>
+<script language="JavaScript">
+$(document).ready(function()
+  {
+	  $(".jCarouselLite").height($(".jc_a").height());
+  $(".btn1").click(function(){
+	if($(".jCarouselLite div").css("left")=="0px"){
+	$(".jCarouselLite div").animate({left:"-870px"});		
+		}
+	if($(".jCarouselLite div").css("left")=="-870px"){
+	$(".jCarouselLite div").animate({left:"-1740px"});		
+		}
+	if($(".jCarouselLite div").css("left")=="-1740px"){
+	$(".jCarouselLite div").css(left,"-1740px");		
+		}
+  });
+  $(".btn2").click(function(){
+	if($(".jCarouselLite div").css("left")=="-870px"){
+	$(".jCarouselLite div").animate({left:"0px"});		
+		}
+
+	if($(".jCarouselLite div").css("left")=="-1740px"){
+	$(".jCarouselLite div").animate({left:"-870px"});		
+		}
+
+	
+	
+  });
+});
+</script>
+<style>
+.jc_a{position: absolute;top: 0;left: 0px;width: 2600px;z-index: 100;}
+.jc_a tr td span{ overflow:hidden;height:30px; display:block;}
+</style>
+</head>
+<body>
+<div class="top02 clear"><img src="//fz.people.com.cn/skygb/sk/Public/images/top01.jpg" width="981" height="292" /></div>
+
+<div class="chaxun clear">
+  <div class="w980">
+     <div class="fl">
+        <h2 class="clear"><img src="//fz.people.com.cn/skygb/sk/Public/images/t01.gif" width="473" height="38" /></h2>
+       <ul>
+       <form action="//fz.people.com.cn/skygb/sk/index.php/index/seach" method="get">
+           <li>项目批准号<input name="pznum" type="text"  class="input03"/>
+               项目类别<select name="xmtype">
+            <option value="0">--全部--</option> 
+            <option value="重大项目" >重大项目</option> 
+            <option value="重点项目" >重点项目</option>            
+            <option value="一般项目" >一般项目</option> 
+            <option value="青年项目" >青年项目</option> 
+            <option value="西部项目" >西部项目</option>
+            <option value="后期资助项目" >后期资助项目</option>
+            <option value="中华学术外译项目" >中华学术外译项目</option> 
+            <option value="成果文库" >成果文库</option> 
+            </select>
+             学科分类<select name="xktype">
+            <option value="0">--全部--</option>         
+            <option value="马列·科社" >马列•科社</option> 
+            <option value="党史·党建" >党史•党建</option> 
+            <option value="哲学" >哲学</option> 
+            <option value="理论经济" >理论经济</option> 
+            <option value="应用经济" >应用经济</option> 
+            <option value="统计学" >统计学</option> 
+            <option value="政治学" >政治学</option> 
+            <option value="法学" >法学</option> 
+            <option value="国际问题研究" >国际问题研究</option> 
+            <option value="社会学" >社会学</option> 
+            <option value="体育学" >体育学</option> 
+            <option value="人口学" >人口学</option> 
+            <option value="民族问题研究" >民族问题研究</option> 
+            <option value="宗教学" >宗教学</option> 
+            <option value="中国历史" >中国历史</option>
+            <option value="世界历史" >世界历史</option> 
+            <option value="考古学" >考古学</option> 
+            <option value="中国文学" >中国文学</option> 
+            <option value="外国文学" >外国文学</option> 
+            <option value="语言学" >语言学</option> 
+            <option value="管理学" >管理学</option> 
+            <option value="新闻学与传播学" >新闻学与传播学</option> 
+            <option value="图书馆、情报与文献学" >图书馆、情报与文献学</option> 
+            <option value="教育学" >教育学</option>
+            <option value="艺术学" >艺术学</option>
+            <option value="军事学" >军事学</option>
+            
+             </select></li>
+           <li>项目名称&nbsp;&nbsp;<input name="xmname" type="text" class="input01" />立项时间<select name="lxtime"><option value="0">--全部--</option>
+                   <option value="2024" >2024</option>
+                   <option value="2023" >2023</option>
+                   <option value="2022" >2022</option>
+            <option value="2021" >2021</option>
+            <option value="2020" >2020</option>
+            <option value="2019" >2019</option>
+            <option value="2018" >2018</option>
+            <option value="2017" >2017</option>
+            <option value="2016" >2016</option>
+            <option value="2015" >2015</option>  
+            <option value="2014" >2014</option>        
+            <option value="2013" >2013</option>
+            <option value="2012" >2012</option>
+            <option value="2011" >2011</option>
+            <option value="2010" >2010</option>
+            <option value="2009" >2009</option>
+            <option value="2008" >2008</option>
+            <option value="2007" >2007</option> 
+            <option value="2006" >2006</option> 
+            <option value="2005" >2005</option> 
+            <option value="2004" >2004</option> 
+            <option value="2003" >2003</option> 
+            <option value="2002" >2002</option> 
+            <option value="2001" >2001</option>
+            <option value="2000" >2000</option>
+            <option value="1999" >1999</option>
+            <option value="1998" >1998</option>
+            <option value="1997" >1997</option>
+            <option value="1996" >1996</option>
+            <option value="1995" >1995</option>       
+            <option value="1994" >1994</option>
+            </select></li>
+           <li>项目负责人<input name="xmleader" type="text"  class="input03"/>
+           专业职务<select name="zyzw">
+           <option value="0">--全部--</option> 
+            <option value="正高级" >正高级</option> 
+            <option value="副高级" >副高级</option> 
+            <option value="中级" >中级</option>  </select>
+            工作单位<input name="gzdw" type="text" class="input03"/></li>
+           <li>单位类别&nbsp;&nbsp;<select name="dwtype">
+            <option value="0">--全部--</option>           
+            
+            <option value="211大学" >211大学</option> 
+            <option value="211大学、985大学" >211大学、985大学</option> 
+            
+            </select>
+            所在省区市<select name="szdq">
+            <option value="0">--全部--</option> 
+            <option value="北京" >北京</option>
+            <option value="上海" >上海</option> 
+            <option value="天津" >天津</option> 
+            <option value="重庆" >重庆</option> 
+            <option value="内蒙古" >内蒙古</option>  
+            
+            <option value="广西" >广西</option> 
+            <option value="宁夏" >宁夏</option> 
+            <option value="新疆" >新疆</option> 
+            <option value="西藏" >西藏</option> 
+            <option value="黑龙江" >黑龙江</option> 
+            
+            <option value="吉林" >吉林</option> 
+            <option value="辽宁" >辽宁</option> 
+            <option value="河北" >河北</option> 
+            <option value="山东" >山东</option> 
+            <option value="江苏" >江苏</option> 
+            
+            <option value="浙江" >浙江</option> 
+            <option value="福建" >福建</option> 
+            <option value="广东" >广东</option> 
+            <option value="四川" >四川</option> 
+            <option value="贵州" >贵州</option> 
+            
+            <option value="河南" >河南</option> 
+            <option value="湖南" >湖南</option> 
+            <option value="湖北" >湖北</option> 
+            <option value="甘肃" >甘肃</option> 
+            <option value="陕西" >陕西</option> 
+            
+            <option value="山西" >山西</option> 
+            <option value="云南" >云南</option> 
+            <option value="青海" >青海</option> 
+            <option value="江西" >江西</option> 
+            <option value="安徽" >安徽</option> 
+            
+            <option value="海南" >海南</option> 
+            <option value="军队" >军队</option> 
+            <option value="机关" >机关</option> 
+            <option value="高校" >高校</option> 
+            <option value="社科院" >社科院</option> 
+            <option value="兵团" >兵团</option> 
+            <option value="党校" >党校</option> 
+            </select>所属系统<select name="ssxt">
+            <option value="0">--全部--</option>           
+            <option value="高等院校、其他学校" >高等院校、其他学校</option> 
+            <option value="各级党校" >各级党校</option> 
+            <option value="各级党政机关" >各级党政机关</option> 
+            <option value="省、市社会科学院" >省、市社会科学院 </option> 
+            <option value="军队系统(包括地方军队院校) " >军队系统(包括地方军队院校) </option> 
+            <option value="中国社会科学院" >中国社会科学院</option> 
+            <option value="其他" >其他</option> </select></li>
+          
+        </ul>
+     </div>
+     <div class="fr">
+         <h2 class="clear"><img src="//fz.people.com.cn/skygb/sk/Public/images/t02.gif" width="473" height="38" /></h2>
+       <ul>
+      
+           <li>成果名称<input name="cgname" type="text" class="input01" />
+               成果形式<select name="cgxs">
+               <option value="0">--全部--</option> 
+               <option value="专著">专著</option> 
+               <option value="研究报告">研究报告</option> 
+               <option value="论文（集）">论文（集）</option> 
+               <option value="工具书">工具书</option> 
+               <option value="译著">译著</option> 
+               <option value="软件">软件</option> 
+               <option value="数据库">数据库</option> 
+               <option value="其他">其他</option> 
+               </select></li>
+           <li>成果等级<select name="cglevel">
+            <option value="0">--全部--</option> 
+            <option value="优秀" >优秀</option>
+            <option value="良好" >良好</option> 
+            <option value="合格" >合格</option> 
+            </select> 
+            结项时间<select name="jxdata">
+            <option value="0">--全部--</option>
+                   <option value="2024" >2024</option>
+                   <option value="2023" >2023</option>
+            <option value="2022" >2022</option>
+            <option value="2021" >2021</option>
+            <option value="2020" >2020</option>
+            <option value="2019" >2019</option>
+            <option value="2018" >2018</option>
+            <option value="2017" >2017</option>        
+            <option value="2016" >2016</option>
+            <option value="2015" >2015</option>  
+			<option value="2014" >2014</option>
+            <option value="2013" >2013</option>
+            <option value="2012" >2012</option>
+            <option value="2011" >2011</option>
+            <option value="2010" >2010</option>
+            <option value="2009" >2009</option>
+            <option value="2008" >2008</option>
+            <option value="2007" >2007</option> 
+            <option value="2006" >2006</option> 
+            <option value="2005" >2005</option> 
+            <option value="2004" >2004</option> 
+            <option value="2003" >2003</option> 
+            <option value="2002" >2002</option> 
+            <option value="2001" >2001</option>
+            <option value="2000" >2000</option>
+            <option value="1999" >1999</option>
+            <option value="1998" >1998</option>
+            <option value="1997" >1997</option>
+            <option value="1996" >1996</option>
+            <option value="1995" >1995</option>       
+            <option value="1994" >1994</option>
+            </select>
+            结项证书号<input name="jxnum" type="text"  class="input03"/></li>
+           <li>出版社&nbsp;&nbsp;<input name="cbs" type="text" class="input03"/>
+           出版时间<select name="cbdate">
+            <option value="0">--全部--</option>
+                   <option value="2024" >2024</option>
+                   <option value="2023" >2023</option>
+            <option value="2022" >2022</option>
+            <option value="2021" >2021</option>
+            <option value="2020" >2020</option>
+            <option value="2019" >2019</option>
+            <option value="2018" >2018</option>  
+            <option value="2017" >2017</option>        
+            <option value="2016" >2016</option>
+            <option value="2015" >2015</option>    
+            <option value="2014" >2014</option>			
+            <option value="2013" >2013</option>
+            <option value="2012" >2012</option>
+            <option value="2011" >2011</option>
+            <option value="2010" >2010</option>
+            <option value="2009" >2009</option>
+            <option value="2008" >2008</option>
+            <option value="2007" >2007</option> 
+            <option value="2006" >2006</option> 
+            <option value="2005" >2005</option> 
+            <option value="2004" >2004</option> 
+            <option value="2003" >2003</option> 
+            <option value="2002" >2002</option> 
+            <option value="2001" >2001</option>
+            <option value="2000" >2000</option>
+            <option value="1999" >1999</option>
+            <option value="1998" >1998</option>
+            <option value="1997" >1997</option>
+            <option value="1996" >1996</option>
+            <option value="1995" >1995</option>       
+            <option value="1994" >1994</option>
+            </select></li>
+           <li>作&nbsp;&nbsp;者&nbsp;&nbsp;<input name="zz" type="text"  class="input03"/>
+               获奖情况<input name="hj" type="text" class="input02" /></li>
+           
+          
+        </ul>
+     </div>
+  </div>
+  <div class="w980 clear input00"><input name="" type="submit" value="搜索" /><input name="" type="reset" value="重置" /></div>
+   </form>
+</div>
+<div class="table_all">
+<table border="0" cellspacing="0" cellpadding="0" class="table01">
+  <tr>
+    <td valign="top"><table border="0" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="t01"><div class="btn2"><img src="//fz.people.com.cn/skygb/sk/Public/images/t06.gif" width="23" height="23" /></div></th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="t01"><i>1</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>2</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>3</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>4</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>5</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>6</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>7</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>8</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>9</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>10</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>11</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>12</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>13</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>14</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>15</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>16</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>17</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>18</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>19</i></td>
+      </tr>
+      <tr>
+        <td class="t01"><i>20</i></td>
+      </tr>
+    </table></td>
+    <td valign="top">
+    <div class="jCarouselLite">
+    <div class="jc_a">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>        
+         <th>项目批准号</th>
+          <th>项目类别 </th>
+          <th>学科分类 </th>
+          <th>项目名称 </th>
+          <th>立项时间 </th>
+          <th>项目负责人 </th>
+          <th>专业职务 </th>
+          <th>工作单位 </th>
+          <th>单位类别</th>
+          <th>所在省区市</th>
+          <th>所属系统</th>
+          <th>成果名称</th>
+          <th>成果形式</th>
+          <th>成果等级</th>
+          <th>结项时间</th>
+          <th>结项证书号</th>
+          <th>出版社</th>
+          <th>出版时间</th>
+          <th>作者</th>
+          <th>获奖情况</th>
+        </tr>
+      </thead>
+              <tr>
+        <td width="90"><span title="23XGJ011">23XGJ011</span></td>
+        <td width="70"><span title="西部项目">西部项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="中国与东南亚国家协同推进现代化的路径及策略研究">中国与东南亚国家协同推进现代化的路径及策略研究</span></td>
+        <td width="90"><span title="2023-09-27">2023-09-27</span></td>
+        <td width="90"><span title="霍强">霍强</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="中共云南省委党校">中共云南省委党校</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CXW015">23CXW015</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="新闻学与传播学">新闻学与传播学</span></td>
+        <td width="320"><span title="“一带一路”背景下中国减贫故事在东南亚的精准传播研究">“一带一路”背景下中国减贫故事在东南亚的精准传播研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="姜静">姜静</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="湖南大学">湖南大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CSS028">23CSS028</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="世界历史">世界历史</span></td>
+        <td width="320"><span title="冷战与东南亚国家的战略选择研究">冷战与东南亚国家的战略选择研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="时伟通">时伟通</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="中国社会科学院世界历史研究所">中国社会科学院世界历史研究所</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CGJ042">23CGJ042</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="东南亚国家代际政治对我国周边安全影响及对策研究">东南亚国家代际政治对我国周边安全影响及对策研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="张添">张添</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="北京大学">北京大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CGJ040">23CGJ040</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="“印太经济框架”下东南亚国家的战略选择及中国应对研究">“印太经济框架”下东南亚国家的战略选择及中国应对研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="邢瑞利">邢瑞利</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="南京航空航天大学">南京航空航天大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CGJ024">23CGJ024</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="中美在东南亚数字经济领域的竞争态势及我国对策研究">中美在东南亚数字经济领域的竞争态势及我国对策研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="贾超芝杉">贾超芝杉</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="云南省社会科学院">云南省社会科学院</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CGJ015">23CGJ015</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="东南亚国家涉“一带一路”舆论的演变及走向研究">东南亚国家涉“一带一路”舆论的演变及走向研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="杜斯">杜斯</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="云南大学">云南大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CGJ014">23CGJ014</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="国际问题研究">国际问题研究</span></td>
+        <td width="320"><span title="百年变局下东南亚国家的对华认知研究">百年变局下东南亚国家的对华认知研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="赵申洪">赵申洪</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="中共中央党校（国家行政学院）">中共中央党校（国家行政学院）</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23CMZ052">23CMZ052</span></td>
+        <td width="70"><span title="青年项目">青年项目</span></td>
+        <td width="70"><span title="民族学">民族学</span></td>
+        <td width="320"><span title="侨销茶贸易与东南亚华侨华人中华文化认同研究">侨销茶贸易与东南亚华侨华人中华文化认同研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="苏娟">苏娟</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="广西师范大学">广西师范大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23BGL169">23BGL169</span></td>
+        <td width="70"><span title="一般项目">一般项目</span></td>
+        <td width="70"><span title="管理学">管理学</span></td>
+        <td width="320"><span title="中国面向东南亚国家的旅游形象构建研究">中国面向东南亚国家的旅游形象构建研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="李雪松">李雪松</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="云南财经大学">云南财经大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23BYY175">23BYY175</span></td>
+        <td width="70"><span title="一般项目">一般项目</span></td>
+        <td width="70"><span title="语言学">语言学</span></td>
+        <td width="320"><span title="“百年变局”下东南亚外来语言竞争与汉语进一步传播研究">“百年变局”下东南亚外来语言竞争与汉语进一步传播研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="孙瑞">孙瑞</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="广西大学">广西大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23BYY133">23BYY133</span></td>
+        <td width="70"><span title="一般项目">一般项目</span></td>
+        <td width="70"><span title="语言学">语言学</span></td>
+        <td width="320"><span title="东南亚华语传承系统构建研究">东南亚华语传承系统构建研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="李春风">李春风</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="北京华文学院">北京华文学院</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23BWW026">23BWW026</span></td>
+        <td width="70"><span title="一般项目">一般项目</span></td>
+        <td width="70"><span title="外国文学">外国文学</span></td>
+        <td width="320"><span title="东南亚民间故事伦理主题研究">东南亚民间故事伦理主题研究</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="杨丽周">杨丽周</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="云南民族大学">云南民族大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23AZW024">23AZW024</span></td>
+        <td width="70"><span title="重点项目">重点项目</span></td>
+        <td width="70"><span title="中国文学">中国文学</span></td>
+        <td width="320"><span title="东南亚华文文学研究的百年流变">东南亚华文文学研究的百年流变</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="朱文斌">朱文斌</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="浙江传媒学院">浙江传媒学院</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+              <tr>
+        <td width="90"><span title="23BSS016">23BSS016</span></td>
+        <td width="70"><span title="一般项目">一般项目</span></td>
+        <td width="70"><span title="世界历史">世界历史</span></td>
+        <td width="320"><span title="地缘政治视角下英国在东南亚的帝国防御研究（1902—1945）">地缘政治视角下英国在东南亚的帝国防御研究（1902—1945）</span></td>
+        <td width="90"><span title="2023-09-22">2023-09-22</span></td>
+        <td width="90"><span title="王本涛">王本涛</span> </td>
+        <td width="70"><span title=""></span></td>
+        <td width="150"><span title="广西师范大学">广西师范大学</span></td>
+        <td width="80"><span title=""></span></td>
+        <td width="100"><span title=""></span></td>
+        <td width="90"><span title=""></span></td>
+        <td width="240" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="70" class="t03"><span title=""></span></td>
+        <td width="90" class="t03"><span title=""></span></td>
+        <td width="100" class="t03"><span title=""></span></td>
+        <td width="140" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td width="120" class="t03"><span title=""></span></td>
+        <td class="t03"><span title=""></span></td>
+      </tr>
+            </table>
+    </div>
+    </div></td>
+    <td valign="top"><table border="0" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="t02"><div class="btn1"><img src="//fz.people.com.cn/skygb/sk/Public/images/t07.gif" alt="" width="23" height="23" /></div></th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="t02">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div class="page clear"></div>
+</div>
+
+</body>
+</html>
