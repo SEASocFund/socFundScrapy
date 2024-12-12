@@ -36,3 +36,5 @@ pip install -r requirements.txt
 ## How to clean the data (after scraping)
 
 You may find that there are duplicate entries in the data, especially when the same project contains multiple keywords of interest. Run `clean.py` to clean the data.
+
+Cleaned data will be written to `SEAASEAN_clean.csv`
